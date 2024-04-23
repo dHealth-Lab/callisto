@@ -13,7 +13,7 @@ import (
 
 	"github.com/forbole/callisto/v4/types/config"
 
-	"cosmossdk.io/simapp"
+	dh "github.com/dhealthproject/dhealth/app"
 
 	"github.com/forbole/callisto/v4/database"
 	"github.com/forbole/callisto/v4/modules"
@@ -55,7 +55,7 @@ func main() {
 // This should be edited by custom implementations if needed.
 func getBasicManagers() []module.BasicManager {
 	return []module.BasicManager{
-		simapp.ModuleBasics,
+		dh.ModuleBasics,
 	}
 }
 
